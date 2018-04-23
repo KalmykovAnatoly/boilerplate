@@ -1,4 +1,4 @@
-package ru.kalmykov.boilerplate.Entity;
+package ru.kalmykov.boilerplate.entity;
 
 import javax.persistence.*;
 
@@ -6,17 +6,25 @@ import javax.persistence.*;
 @Table(name = "Player")
 public class Player {
 
+    public Player() {
+    }
+
+    public Player(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     @Column(name = "Name")
     private String name;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
