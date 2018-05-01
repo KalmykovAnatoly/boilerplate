@@ -1,0 +1,54 @@
+html,
+body {
+    height:100%;
+}
+
+html > body {
+
+}
+
+/* Reset Base Font Size */
+
+body {
+	background: #fff;
+	color: #333;
+}
+
+h1,
+h2 {
+    font-family: 'trebuchet ms', verdana, arial;
+    margin: 0
+    padding: 10px;
+}
+
+h1 {
+    font-size: large;
+}
+
+#banner {
+    background: #06b url(bg.gif) repeat-x;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    font-size: large;
+    padding: 15px;
+    text-align: center;
+}
+
+#banner a {
+    color: white;
+}
+
+#main {
+    padding: 1em;
+}
+
+a img {
+    border: none;
+}
+
+.status-field {
+    color: #ff0000;
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+}

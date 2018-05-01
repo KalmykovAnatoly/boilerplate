@@ -1,0 +1,352 @@
+body {
+    background: #344A52 url(../images/bg-1.png) no-repeat !important;
+    color: #231F20;
+    font: normal 14px/1.2 Arial, sans-serif;
+    height: 801px;
+    position: relative;
+    padding-top: 99px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+    width: 1440px;
+}
+
+.wrapper {
+	height: 682px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 1124px;
+}
+
+.page-title {
+  vertical-align: top;  
+}
+
+/* OPTIONS */
+.option {
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.option .wrap {
+	max-height: 100%;
+	overflow: hidden;
+}
+
+.option .option_title {
+    position: relative;
+    z-index: 2;
+}
+
+.option.active .option_title {
+    text-shadow: none;
+}
+
+.option b {
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+.option .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  *height: 200%;
+  width: 100%;
+  *width: 200%;
+  visibility: hidden;
+}
+
+.tap .option.over .hover {
+  visibility: visible;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.option.active .hover {
+  visibility: visible;
+}
+
+.active * {
+    color: #fff !important;
+}
+
+/* ===== 1 ====== */
+#div_1 {
+    background: url(../images/options/id1.png) no-repeat;
+    height: 167px;
+    padding: 29px 34px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 574px;
+}
+
+#div_1 .option_title {
+	font: bold 40px/1 Arial, sans-serif;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+#div_1 .hover {
+    background-image: url(../images/hover/id1.png);
+}
+
+/* ===== 2 ====== */
+#div_2 {
+	background: url(../images/options/id2.png) no-repeat;
+  height: 172px;
+  padding: 33px 40px 20px 25px;
+  position: absolute;
+  top: 0;
+  left: 669px;
+  width: 199px;
+}
+
+#div_2 .option_title {
+  font: bold 33px/1 Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+#div_2 .hover {
+    background-image: url(../images/hover/id2.png);
+}
+
+/* ===== 3 ====== */
+#div_3 {
+	background: url(../images/options/id3.png) no-repeat;
+  padding: 33px 15px 20px 58px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 172px;
+  width: 140px;
+}
+
+#div_3 .option_title {
+  font: bold 33px/1 Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+#div_3 .hover {
+  background-image: url(../images/hover/id3.png);
+}
+
+/* ===== 4 ====== */
+#div_4 {
+  background-image: url(../images/options/id4.png);
+	font: normal 21px/1.2 Arial, sans-serif;
+  height: 135px;
+  position: absolute;
+	padding: 26px 22px;
+  top: 245px;
+  left: 0;
+	width: 152px;
+}
+
+#div_4 .option_title {
+  font: bold 22px/1 Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 4px;
+}
+
+#div_4 .hover {
+  background-image: url(../images/hover/id4.png);
+}
+
+/* ===== 5 ====== */
+#div_5 {
+  background-image: url(../images/options/id5.png);
+	color: #231f20;
+	font: normal 21px/1.2 Arial, sans-serif;
+  height: 151px;
+  padding: 18px 30px;
+  position: absolute;
+  left: 218px;
+  top: 244px;
+	width: 363px;
+}
+
+#div_5 .option_title {
+  font: bold 30px/1 Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+#div_5 .hover{
+  background-image: url(../images/hover/id5.png);
+}
+
+/* ===== 6 ====== */
+#div_6 {
+	background: url(../images/options/id6.png) no-repeat;
+	position: absolute;
+	top: 244px;
+	left: 669px;
+	height: 154px;
+	padding-top: 33px;
+	padding-right: 40px;
+	padding-left: 25px;
+	width: 199px;
+}
+
+#div_6 .option_title {
+  font: bold 24px/1 Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+#div_6 .hover{
+  background-image: url(../images/hover/id6.png);
+}
+
+/* ===== 7 ====== */
+#div_7 {
+  background: url(../images/options/id7.png) no-repeat;
+	height: 134px;
+	padding: 33px 15px 20px 58px;
+	position: absolute;
+  top: 244px;
+  right: 0;
+  width: 140px;
+}
+
+#div_7 .option_title {
+  font: bold 24px/1 Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+#div_7 .hover{
+    background-image: url(../images/hover/id7.png);
+}
+
+/* ===== 8 ====== */
+#div_8 {
+  background-image: url(../images/options/id8.png);
+	color: #231f20;
+	font: normal 16px/1.3 Arial, sans-serif;
+  height: 77px;
+	padding: 16px 22px;
+  position: absolute;
+  top: 454px;
+  left: 0;
+	width: 246px;
+}
+
+#div_8 .option_title {
+  font: bold 22px/1.2 Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+#div_8 .hover {
+  background-image: url(../images/hover/id8.png);
+}
+
+/*===== 9 ======*/
+#div_9 {
+  background-image: url(../images/options/id9.png);
+	color: #231f20;
+	font: normal 16px/1.3 Arial, sans-serif;
+	height: 77px;
+  position: absolute;
+	padding: 16px 15px 16px 37px;
+  top: 454px;
+  left: 288px;
+  width: 213px;
+}
+
+#div_9 .option_title {
+  font: bold 22px/1.2 Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+#div_9 .hover{
+    background-image: url(../images/hover/id9.png);
+}
+
+/* ===== 10 ====== */
+#div_10 {
+  background-image: url(../images/options/id10.png);
+	color: #231f20;
+	font: normal 16px/1.3 Arial, sans-serif;
+  height: 77px;
+  padding: 16px 25px;
+  position: absolute;
+  top: 454px;
+  left: 579px;
+  width: 236px;
+}
+
+#div_10 .option_title {
+	font: bold 22px/1.2 Arial, sans-serif;
+	letter-spacing: 3px;
+	margin-bottom: 2px;
+	text-transform: none;
+}
+
+#div_10  .hover {
+  background-image: url(../images/hover/id10.png);
+}
+
+/* TALON */
+.talon {
+  height: 126px;
+  margin-left: -250px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 500px;
+}
+
+.take_text {
+  color: #9ecc6d;
+  font: 28px/1 Arial, sans-serif;
+  margin-bottom: 5px;
+  position: relative;
+  left: -17px;
+  text-align:center;
+  visibility:hidden;
+}
+
+.talon_animation {
+  background-image:url(../images/talon_animation.jpg);
+  height: 80px;
+  display: block;
+  top: 43px;
+  left: 84px;
+  overflow: hidden;
+  position: absolute;
+  width: 352px;
+}
+
+.animate-2  .talon_animation {
+  background-position: 0 -80px;
+}
+
+.animate-3  .talon_animation {
+  background-position: 0 -160px;
+}
+
+.animate-4  .talon_animation {
+  background-position: 0 -240px;
+}
+
+.animate-5  .talon_animation {
+  background-position: 0 -320px;
+}
+

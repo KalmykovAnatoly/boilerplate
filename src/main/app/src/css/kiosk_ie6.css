@@ -1,0 +1,73 @@
+.logo {
+    background: url(../images/logo46.gif) no-repeat;
+}
+
+/*===== 1 ======*/
+#div_1{
+    background: url(../images/options/id1.gif) no-repeat;
+}
+
+#div_1 .hover{
+    background: url(../images/hover/id1.gif) no-repeat;
+}
+
+/*===== 2 ======*/
+#div_2{
+    background: url(../images/options/id2.gif) no-repeat;
+}
+
+#div_2 .hover{
+    background: url(../images/hover/id2.gif) no-repeat;
+  }
+
+/*===== 3 ======*/
+#div_3{background: url(../images/options/id3.gif) no-repeat;}
+#div_3 .hover{background: url(../images/hover/id3.gif) no-repeat;}
+
+/*===== 4 ======*/
+#div_4{background: url(../images/options/id4.gif) no-repeat;}
+#div_4 .hover{background: url(../images/hover/id4.gif) no-repeat;}
+
+/*===== 5 ======*/
+#div_5{background: url(../images/options/id5.gif) no-repeat;}
+#div_5 .hover{background: url(../images/hover/id5.gif) no-repeat;}
+
+/*===== 6 ======*/
+#div_6{background: url(../images/options/id6.gif) no-repeat;}
+#div_6 .hover{background: url(../images/hover/id6.gif) no-repeat;}
+
+/*===== 7 ======*/
+#div_7{background: url(../images/options/id7.gif) no-repeat;}
+#div_7  .hover{background: url(../images/hover/id7.gif) no-repeat;}
+
+/*===== 8 ======*/
+#div_8{background: url(../images/options/id8.gif) no-repeat;}
+#div_8  .hover{background: url(../images/hover/id8.gif) no-repeat;}
+
+/*===== 9 ======*/
+#div_11{background: url(../images/options/id11.gif) no-repeat;}
+#div_11 .hover{background: url(../images/hover/id11.gif) no-repeat;}
+
+/*===== 10 ======*/
+#div_12{background: url(../images/options/id12.gif) no-repeat;}
+#div_12 .hover{background: url(../images/hover/id12.gif) no-repeat;}
+
+/*===== 11 ======*/
+#div_9{background: url(../images/options/id9.gif) no-repeat;}
+#div_9  .hover{background: url(../images/hover/id9.gif) no-repeat;}
+
+/*===== 12 ======*/
+#div_10{background: url(../images/options/id10.gif) no-repeat;}
+#div_10 .hover{background: url(../images/hover/id10.gif) no-repeat;}
+
+/*===== 13 ======*/
+#div_13{background: url(../images/options/id13.gif) no-repeat;}
+#div_13 .hover{background: url(../images/hover/id13.gif) no-repeat;}
+
+/*===== 14 ======*/
+#div_14{background: url(../images/options/id14.gif) no-repeat;}
+#div_14 .hover{background: url(../images/hover/id14.gif) no-repeat;}
+
+/*===== 15 ======*/
+#div_15{background: url(../images/options/id15.gif) no-repeat;}
+#div_15 .hover{background: url(../images/hover/id15.gif) no-repeat;}

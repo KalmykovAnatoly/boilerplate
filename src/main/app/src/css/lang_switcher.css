@@ -1,0 +1,71 @@
+.switcher {
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  z-index: 100;
+}
+
+.switcher table {
+  height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.switcher td {
+  cursor: pointer;
+  color: #FFF;
+  font-size: 32px;
+  position: relative;
+}
+
+.switcher td.active {
+  background-color: transparent;
+  color: #000;
+}
+
+.switcher td.middle {
+  border-right: 1px solid #979797;
+}
+
+.switcher td.active .hover {
+  color: #000;
+  visibility: visible;
+}
+
+#div_38.lang {
+  background-image: url(../images/options/id38.png);
+  height: 40px;
+  padding: 20px;
+  width: 86px;
+}
+
+.lang.active .option_title {
+  color: #000
+}
+
+#div_38 .hover {
+  background-image: url(../images/hover/id38.png);
+}
+
+#div_39.lang,
+#div_40.lang {
+  background-image: url(../images/options/id39.png);
+  height: 40px;
+  padding: 20px 136px 20px 20px;
+  width: 96px;
+}
+
+#div_39 .hover {
+  background-image: url(../images/hover/id39.png);
+}
+
+#div_40.lang {
+  background-image: url(../images/options/id40.png);
+  padding: 20px 20px 20px 136px;
+}
+
+#div_40 .hover {
+  background-image: url(../images/hover/id40.png);
+}
