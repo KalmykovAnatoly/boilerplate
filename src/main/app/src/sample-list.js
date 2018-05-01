@@ -3,7 +3,7 @@ import './css/kiosk.css'
 
 export class SampleList extends React.Component {
     goToSample(sampleId){
-        this.props.history.push('/sample/'+sampleId);
+        this.props.history.push('/samples/'+sampleId+'/0/0');
         console.log(this.props.history)
     }
 
@@ -14,7 +14,7 @@ export class SampleList extends React.Component {
         }
     }
     componentDidMount() {
-        fetch("http://localhost:8080/samples")
+        fetch(ctx+"api/samples")
             .then(res => res.json())
             .then(
                 result => {

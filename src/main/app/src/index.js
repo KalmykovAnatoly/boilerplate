@@ -6,6 +6,7 @@ import {Provider} from 'react-redux' ;
 import {createStore} from 'redux' ;
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {SampleList} from './sample-list'
+import {Sample} from './sample'
 
 const initialState =  [
     'Smels like teen Spirit',
@@ -25,8 +26,8 @@ ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <Switch>
+                <Route path="/samples/:sampleId/:pageId/:langId" component={Sample} />
                 <Route path="/samples" component={SampleList} />
-                <Route path="/samples/:sampleId" component={SampleList} />
                 <Route path="*" component={App} />
             </Switch>
         </BrowserRouter>
