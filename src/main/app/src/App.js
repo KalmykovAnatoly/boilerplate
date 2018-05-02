@@ -11,7 +11,7 @@ class App extends Component {
         this.props.history.push('/samples');
     }
     render() {
-        console.log(this.props.testStore);
+        console.log(this.props)
         return (
             <div className="App">
                 <input type="text" ref={(input)=>this.trackInput = input}/>
@@ -19,7 +19,7 @@ class App extends Component {
                 <ul>
                     {
                         this.props.testStore.map((track, index) =>
-                            <li key={index}>{track}</li>)
+                            <li key={index}>{track.name}</li>)
                     }
                 </ul>
                 <button onClick={()=>this.goTo()}>На другую страницу</button>
@@ -34,7 +34,7 @@ export default connect(
     }),
     dispatch => ({
         onAddTrack: (trackName) =>{
-             dispatch({type: 'ADD_TRACK', payload: trackName})
+             dispatch({type: 'ADD_TRACK', payload: {isOpen:true, name:trackName}})
         }
     })
 )(App);

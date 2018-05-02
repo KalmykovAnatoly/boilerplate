@@ -7,23 +7,21 @@ import {createStore} from 'redux' ;
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {SampleList} from './sample-list'
 import {Sample} from './sample'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import store from './store'
 
-const initialState =  [
-    'Smels like teen Spirit',
-    'Enter Sandman'
-] ;
+// function playlist(state = [], action) {
+//     if (action.type === 'ADD_TRACK') {
+//         return [...state, action.payload]
+//     }
+//     return state;
+// }
 
-function playlist(state = initialState, action) {
-    if (action.type === 'ADD_TRACK') {
-        return [...state, action.payload]
-    }
-    return state;
-}
-
-const store = createStore(playlist);
+// const store = createStore(playlist);
 
 ReactDOM.render(
     <Provider store={store}>
+        <MuiThemeProvider>
         <BrowserRouter>
             <Switch>
                 <Route path="/samples/:sampleId/:pageId/:langId" component={Sample} />
@@ -31,6 +29,7 @@ ReactDOM.render(
                 <Route path="*" component={App} />
             </Switch>
         </BrowserRouter>
+        </MuiThemeProvider>
     </Provider>, document.getElementById('root'));
 
 //

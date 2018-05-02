@@ -4,6 +4,8 @@ import Footer from "./footer";
 import Button from "./button";
 import LangSwitcher from "./lang-switcher";
 import Header from "./header";
+import ButtonDialog from './button-dialog';
+import {connect} from 'react-redux';
 
 export class Sample extends React.Component{
 
@@ -13,8 +15,8 @@ export class Sample extends React.Component{
             header: [],
             footer: [],
             buttons: [],
-            isSpecial: true
-        }
+            isSpecial: true,
+        };
     }
 
     componentWillReceiveProps(nextProps) {
@@ -52,8 +54,15 @@ export class Sample extends React.Component{
                 });
             })
     }
+    openModal(e, text){
+        e.preventDefault();
+        this.setState({
+            modalIsOpen: true
+        })
+    }
 
     render(){
+        console.log(this.state)
         var style = 'main menu_body';
         if (!this.state.isSpecial) {
             style += ' main-2lvl';
@@ -73,13 +82,16 @@ export class Sample extends React.Component{
                 {this.state.buttons
                     .sort((a,b)=>a.id.position>b.id.position)
                     .map(button => {
-                            return <Button key={button.position} id={button.position}
-                                           optionName={button.name}
+                            return <Button key={button.position}
+                                           id={button.position}
+                                           name={button.name}
+                                           onRightClick={(e, text)=>this.openModal(e, text)}
                                            link={button.link}/>
                         }
                     )}
             </CenterPane>
             <Footer footer={this.state.footer} isSpecial={this.state.isSpecial}/>
+            <ButtonDialog/>
         </div>
     }
 }
