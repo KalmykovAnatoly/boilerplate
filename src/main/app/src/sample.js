@@ -28,7 +28,6 @@ export class Sample extends React.Component{
 
     getData(props) {
         var isSpecial = props.match.params.pageId == 1 || props.match.params.pageId == 11 || props.match.params.pageId == 12;
-
         var headerButtons = [];
         var footerButtons = [];
         // if (isSpecial) {
@@ -54,15 +53,8 @@ export class Sample extends React.Component{
                 });
             })
     }
-    openModal(e, text){
-        e.preventDefault();
-        this.setState({
-            modalIsOpen: true
-        })
-    }
 
     render(){
-        console.log(this.state)
         var style = 'main menu_body';
         if (!this.state.isSpecial) {
             style += ' main-2lvl';
@@ -85,7 +77,6 @@ export class Sample extends React.Component{
                             return <Button key={button.position}
                                            id={button.position}
                                            name={button.name}
-                                           onRightClick={(e, text)=>this.openModal(e, text)}
                                            link={button.link}/>
                         }
                     )}

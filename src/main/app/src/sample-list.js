@@ -4,7 +4,6 @@ import './css/kiosk.css'
 export class SampleList extends React.Component {
     goToSample(sampleId){
         this.props.history.push('/samples/'+sampleId+'/0/0');
-        console.log(this.props.history)
     }
 
     constructor(props){

@@ -11,7 +11,7 @@ export default class ButtonDialog extends React.Component {
             open: false,
             name: "",
             position: ""
-        }
+        };
         store.subscribe(()=>{
             this.setState({
                 open: store.getState()[0].open,
@@ -20,11 +20,6 @@ export default class ButtonDialog extends React.Component {
             })
         })
     }
-
-
-    handleOpen = () => {
-        this.setState({open: true});
-    };
 
     handleClose = () => {
         this.setState({open: false});
@@ -48,7 +43,6 @@ export default class ButtonDialog extends React.Component {
         return (
             <div>
                 <Dialog
-                    title="Dialog With Actions"
                     actions={actions}
                     modal={false}
                     open={this.state.open}

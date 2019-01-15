@@ -1,9 +1,12 @@
 package ru.kalmykov.boilerplate.entity;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Sample")
+@JacksonXmlRootElement(localName = "Sample")
 public class Sample
 {
     @Id
